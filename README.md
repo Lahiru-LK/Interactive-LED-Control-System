@@ -1,5 +1,7 @@
 # Interactive LED Control System 🌈🕹️
 
+![png](https://github.com/Lahiru-LK/Interactive-LED-Control-System/assets/104630433/8e6fba8b-e35c-4ed0-90c2-5605611c2870)
+
 ## Project Overview 🚀
 
 This project includes an interactive LED control system using the following components:
