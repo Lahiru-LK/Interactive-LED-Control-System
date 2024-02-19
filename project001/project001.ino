@@ -125,6 +125,9 @@ void loop() {
   delay(100);
 }
 
+
+
+
 void handleMenuNavigation() {
   encoderPosition = encoder.read();
 
@@ -138,3 +141,4 @@ void handleMenuNavigation() {
     lastEncoderPosition = encoderPosition;
   }
 }
+
