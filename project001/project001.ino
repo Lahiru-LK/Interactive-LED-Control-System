@@ -124,3 +124,21 @@ void loop() {
 
   delay(100);
 }
+
+
+
+
+void handleMenuNavigation() {
+  encoderPosition = encoder.read();
+
+  if (encoderPosition != lastEncoderPosition) {
+    if (encoderPosition > lastEncoderPosition) {
+      incrementMenu();
+    } else {
+      decrementMenu();
+    }
+
+    lastEncoderPosition = encoderPosition;
+  }
+}
+
