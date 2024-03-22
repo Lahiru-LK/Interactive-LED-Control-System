@@ -142,3 +142,38 @@ void handleMenuNavigation() {
   }
 }
 
+
+void incrementMenu() {
+  switch (currentPage) {
+    case HOME_PAGE:
+      selectedMenuItem = (selectedMenuItem + 1) % 3;
+      break;
+
+    case STEPPERS_PAGE:
+      selectedMenuItem = (selectedMenuItem + 1) % 2;
+      break;
+
+    case LIGHTS_PAGE:
+    case SETTINGS_PAGE:
+      selectedMenuItem = (selectedMenuItem + 1) % 4;
+      break;
+  }
+}
+
+void decrementMenu() {
+  switch (currentPage) {
+    case HOME_PAGE:
+      selectedMenuItem = (selectedMenuItem + 2) % 3;
+      break;
+
+    case STEPPERS_PAGE:
+      selectedMenuItem = (selectedMenuItem + 1) % 2;
+      break;
+
+    case LIGHTS_PAGE:
+    case SETTINGS_PAGE:
+      selectedMenuItem = (selectedMenuItem + 3) % 4;
+      break;
+  }
+}
+
